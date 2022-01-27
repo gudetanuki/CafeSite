@@ -1,0 +1,29 @@
+main {
+  width: 100%;
+  height: 76%;
+
+  section {
+    width: 100%;
+    height: 40%;
+
+    .front-image {
+      width: 73%;
+      height: 16%;
+      background-image: url();
+    }
+
+    .back-image {
+      width: 85%;
+      height: 20%;
+      background-image: url();
+    }
+
+    .link {
+      width: 46%;
+      height: 5%;
+      background: rgba(255,255,255,0.7);
+    }
+
+
+  }
+}
