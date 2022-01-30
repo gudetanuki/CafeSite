@@ -1,53 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 main {
   width: 100%;
-  height: 76%;
+  height: 4000px;
+  font-size: 15px;
+  background-image: url(../../img/background.jpeg);
+  background-position: contain;
+  background-repeat:round;
+}
 
-  section {
-    width: 100%;
-    height: 40%;
+section {
+  width: 100%;
+  height: 900px;
+}
 
-    .front-image {
-      width: 73%;
-      height: 16%;
-      background-image: url();
-    }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .back-image {
-      width: 85%;
-      height: 20%;
-      background-image: url();
-    }
+a {
+  text-decoration: none;
+  color: black;
 
-    .link {
-      width: 46%;
-      height: 5%;
-      background: rgba(255,255,255,0.7);
-    }
+  &:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}
+
+.front-image {
+  width: 73%;
+  height: 730px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.back-image {
+  width: 85%;
+  height: 810px;
+}
+
+.link {
+  width: 46%;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+
+.concept {
+  background: silver;
+  // これは後で消します
+
+
+  .front-image {
+    background-image: url(../../img/menu-image1.jpeg);
+    position: relative;
+    top: 0;
+    left: 0;
   }
 
-  .parallax {
-    width: 100%;
-    height: 10%;
-    background-image: url();
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; 
+  .back-image {
+    background-color: rgba(230, 166, 151, 55%);
+    position: relative;
+    top: -700px;
+    left: 0; 
   }
 
-  .access {
-    width: 100%;
-    height: 20%;
-    
-    .access-flex {
-      width: 100%;
-      height: 90%;
-      display: flex;
-      justify-content: center;
-    }  
+  .link-1st {
+    position: relative;
+    top: -930px;
+    left: 800px; 
   }
+
+}
+
+.origin {
+  background: yellow; 
+  // これは後で消します
+
+  .middle-image {
+    width: 36%;
+    height: 550px;
+    background-image: url(../../img/food-image2.jpeg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 350px;
+    left: 0;
+    z-index: 3;
+  }
+
+  .front-image {
+    background-image: url(../../img/food-image1.jpeg);
+    position: relative;
+    top: -500px;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  .back-image {
+    background-color: rgba(151, 230, 166, 55%);
+    position: relative;
+    top: -1200px;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  .link-2nd {
+    position: relative;
+    top: -2000px;
+    left: 0; 
+  }
+}
+
+.parallax {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/menu-image2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+
+.access {
+  width: 100%;
+  height: 20%;
+
+  h1 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+  &.access-flex {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+
+    &.address {
+      p {
+        margin-bottom: px;
+      }
+    }
+
+    &.map {
+      width: 45%;
+
+    }
+  }  
+}
 
   
 
 
-}
