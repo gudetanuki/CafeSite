@@ -1,132 +1,47 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-// TODO:全体に対するcss設定なので別ファイルに書き出して後でimportします
+@import "base.scss";
+@import "parallax.scss";
+@import "font-style.scss";
+@import "layout-image.scss";
+@import "variable.scss";
 
-
-main {
-  width: 100%;
-  height: 3300px;
-  font-size: 15px;
-  background-image: url(../../img/background.jpeg);
-  background-position: contain;
-  background-repeat: round;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  transition: 1s;
-  position: relative;
-  
-  &:hover {
-    transform: scale(1.2);
-  }
-
-  &::after {
-    position: absolute;
-    bottom: .3em;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 3px;
-    background-color: #2ecc71;
-    opacity: 0;
-    transition: 1s;
-  }
-
-  &:hover::after {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  width: 100%;
-  height: 950px; 
-}
-
-.front-image {
-  width: 73%;
-  height: 730px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.back-image {
-  width: 85%;
-  height: 810px;
-}
-
-.link {
+.link-container {
   width: 46%;
   height: 220px;
-  background: rgba(255, 255, 255, 0.5);
+  background: $translucent-white;
   z-index: 2;
   padding: 30px 20px;
-}
 
-.text {
-  font-size: 28px;
-  letter-spacing: 3px;
-}
-
-.text-link {
-  font-size: 25px;
-  margin: 60px 0 0 300px; 
+  &-text {
+    font-size: 2.5rem;
+    margin: 60px 0 0 300px; 
+  }
 }
 
 .concept {
-
-  .concept-front {
+  &-front {
     background-image: url(../../img/menu-image1.jpeg);
     position: relative;
     top: 0;
     left: 0;
   }
 
-  .concept-back {
-    background-color: rgba(230, 166, 151, 55%);
+  &-back {
+    background-color: $image-back-pink;
     position: relative;
     top: -700px;
     left: 0; 
   }
 
-  .link-concept {
+  &-link {
     position: relative;
     top: -930px;
     left: 100%;
     transform: translateX(-100%);
   }
-
 }
 
 .origin {
-
-  .middle-image {
-    width: 36%;
-    height: 550px;
-    background-image: url(../../img/food-image2.jpeg);
-    background-repeat: no-repeat;
-    position: relative;
-    top: 350px;
-    left: 0;
-    z-index: 3;
-  }
-
-  .origin-front {
+  &-front {
     background-image: url(../../img/food-image1.jpeg);
     position: relative;
     top: -500px;
@@ -134,56 +49,36 @@ section {
     transform: translateX(-100%);
   }
 
-  .origin-back {
-    background-color: rgba(151, 230, 166, 55%);
+  &-back {
+    background-color: $image-back-green;
     position: relative;
     top: -1200px;
     left: 100%;
     transform: translateX(-100%);
   }
 
-  .link-origin {
+  &-link {
     position: relative;
     top: -2000px;
     left: 0; 
   }
 }
 
-// TODO:このパララックス部分のcssは別ファイルに書き出して後でimportします
-.parallax {
-  width: 100%;
-  height: 400px;
-  margin-top: 70px;
-  background-image: url(../../img/menu-image2.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; 
-}
-
 .menu-link {
-  background: white;
+  background: $color-white;
   width: 100%;
   height: 230px;
   text-align: center;
-  font-size: 50px;
+  font-size: 5rem;
   padding: 60px 20px;
 }
 
-.access {
-  width: 100%;
+.access-container {
   height: 20%;
   padding: 60px 0;
 
-  h1 {
-    font-size: 30px;
-    letter-spacing: 3px;
-    font-weight: normal;
-    text-align: center;
-  }
-  
   &-flex {
-    background: rgba(255, 255, 255, 0.5);
+    background: $translucent-white;
     width: 80%;
     height: 90%;
     margin: 40px auto 0;
@@ -191,19 +86,17 @@ section {
     justify-content: center;
     align-items: center;
     padding: 30px 60px;
-
-    .address {
-      width: 50%;
-      padding: 70px 30px;
-      p {
-        margin-bottom: 50px;
-      }
-    }
-
-    &.map {
-      width: 50%;
-    }
   }  
+  &-address {
+    width: 50%;
+    padding: 70px 30px;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+  &-map {
+    width: 50%;
+  }
 }
 
   
