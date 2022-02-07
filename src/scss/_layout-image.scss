@@ -1,0 +1,24 @@
+.front-image {
+  width: 73%;
+  height: 730px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.middle-image {
+  width: 36%;
+  height: 550px;
+  background-image: url(../../img/food-image2.jpeg);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 350px;
+  left: 0;
+  z-index: 3;
+}
+
+.back-image {
+  width: 85%;
+  height: 810px;
+}
