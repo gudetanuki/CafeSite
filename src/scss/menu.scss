@@ -1,0 +1,69 @@
+main {
+  position: absolute;
+  width: 100%;
+  top: 900px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.classic {
+  height: 570px;
+  background: white;
+  display: flex;
+  // justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.food-image {
+  width: 60%;
+  height: 570px;
+  background: #ffff00;
+  background-position: center;
+  background-size: cover;
+}
+
+.detail {
+  width: 40%;
+  padding: 80px 60px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.contents {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.price {
+  font-size: 30px;
+  span {
+    font-size: 15px;
+  }
+}
+
+.classic-lunch1 {
+  flex-direction: row-reverse;
+  .food-image {
+    background-image: url(../../img/menu-image1.jpeg);  
+  }
+}
+
+.classic-lunch2 {
+  .food-image {
+    background-image: url(../../img/menu-image2.png);  
+  }
+}
+
+.classic-lunch3 {
+  flex-direction: row-reverse;
+  .food-image {
+    background-image: url(../../img/menu-image3.jpeg);  
+  }
+}
