@@ -27,11 +27,11 @@
   <main>
     <section class="lunch-menu">
       <h1>ランチメニュー</h1>
-      <div class="classic classic-lunch1">
-        <div class="food-image"></div>
-        <div class="detail detail-1">
+      <div class="lunch-container lunch-container-1">
+        <div class="lunch-container-image lunch-container-1-image"></div>
+        <div class="detail lunch-container-detail lunch-container-1-detail">
           <h3>30品の野菜健康定食</h3>
-          <div class="contents">玄米ご飯、塩麹の鳥唐揚げ、<br>
+          <div class="lunch-container-contents lunch-container-1-contents">玄米ご飯、塩麹の鳥唐揚げ、<br>
             旬のおかず3品、お味噌汁
           </div>
           <div class="price">1,100円<span>（税込）</span></div> 
@@ -39,22 +39,22 @@
       </div>
 
 
-      <div class="classic classic-lunch2">
-        <div class="food-image"></div>
-        <div class="detail detail-2"> 
+      <div class="lunch-container lunch-container-2">
+        <div class="lunch-container-image lunch-container-2-image"></div>
+        <div class="detail lunch-container-detail lunch-container-2-detail">
           <h3>玄米の健康ねばねば丼</h3>
-          <div class="contents">玄米の健康ねばねば丼、<br>
+          <div class="lunch-container-contents lunch-container-2-contents">玄米の健康ねばねば丼、<br>
             旬のおかず3品、お味噌汁
           </div>
           <div class="price">1,000円<span>（税込）</span></div> 
         </div>
       </div>
 
-      <div class="classic classic-lunch3">
-        <div class="food-image"></div>
-        <div class="detail detail-3">
+      <div class="lunch-container lunch-container-3">
+        <div class="lunch-container-image lunch-container-3-image"></div>
+        <div class="detail lunch-container-detail lunch-container-3-detail">
           <h3>野菜たっぷりカレー</h3>
-          <div class="contents">野菜たっぷりカレー、<br>
+          <div class="lunch-container-contents lunch-container-3-contents"></div>野菜たっぷりカレー、<br>
             旬のおかず3品、温泉玉子
           </div>
           <div class="price">1,000円<span>（税込）</span></div> 
@@ -64,67 +64,109 @@
 
     <section class="sweet-menu">
       <h1>スイーツ</h1>
-      <div class="">
-        <div class="image"></div>
-        <div class="detail">
-          <h3>ベリーたっぷり米粉パンケーキ</h3>
-          <p>800円<span>（税込）</span></p> 
+      <div class="sweet-container">
+        <div class="sweet-container-contents sweet-container-1-contents">
+          <div class="sweet-container-contents-image sweet-container-1-contents-image"></div>
+          <div class="detail sweet-container-contents-detail">
+            <h3>ベリーたっぷり米粉パンケーキ</h3>
+            <div class="price">800円<span>（税込）</span></div> 
+          </div>
+        </div>
+        <div class="sweet-container-contents sweet-container-2-contents">
+          <div class="sweet-container-contents-image sweet-container-2-contents-image"></div>
+          <div class="detail sweet-container-contents-detail">
+            <h3>グルテンフリーシフォンケーキ</h3>
+            <div class="price">500円<span>（税込）</span></div> 
+          </div>
         </div>
       </div>
-      <div class="image"></div>
-      <div class="detail">
-        <h3>グルテンフリーシフォンケーキ</h3>
-        <p>500円<span>（税込）</span></p> 
-      </div>
-    </div>
     </section>
 
     <section class="drink-menu">
       <h1>ドリンク</h1>
-      <div class="menu-list">
+      <div class="drink-menu-list">
         <div class="drink">
-          <p>カフェオレ　　　　　 …………　400円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
+          <div class="drink-name">カフェオレ<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">400円<br>
+            <span>(税込)</span>
+          </div>
         </div>
         <div class="drink">
-          <p>ダージリンティー　　　　　 …………　400円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
+          <div class="drink-name">ダージリンティー<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">400円<br>
+            <span>(税込)</span>
+          </div>
         </div>
         <div class="drink">
-          <p>有機ルイボスティー　　　　　 …………　400円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
+          <div class="drink-name">有機ルイボスティー<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">400円<br>
+            <span>(税込)</span>
+          </div>
         </div>
         <div class="drink">
-          <p>レモングラス緑茶　 　…………　500円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
+          <div class="drink-name">レモングラス緑茶<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">500円<br>
+            <span>(税込)</span>
+          </div>
         </div>
         <div class="drink">
-          <p>国産大豆の黒豆茶　 　　…………　500円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
+          <div class="drink-name">国産大豆の黒豆茶<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">500円<br>
+            <span>(税込)</span>
+          </div>
         </div>
         <div class="drink">
-          <p>ロイヤルミルクティー　 …………　500円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
+          <div class="drink-name">ロイヤルミルクティー<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">500円<br>
+            <span>(税込)</span>
+          </div>
         </div>
         <div class="drink">
-          <p>加賀棒ほうじ茶ラテ　　 …………　550円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
+          <div class="drink-name">加賀棒ほうじ茶ラテ<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">550円<br>
+            <span>(税込)</span>
+          </div>
         </div>
         <div class="drink">
-          <p>オーガニック抹茶ラテ　 …………　550円</p>
-          <p>（HOT/ICE)　　　　　　　　　　　　　　　　　(税込)</p>
-        </div>
+          <div class="drink-name">オーガニック抹茶ラテ<br>
+            <span>(HOT/ICE)</span>
+          </div>
+          <div class="dots">……………………</div>
+          <div class="drink-price">550円<br>
+            <span>(税込)</span>
+          </div>
+        </div> 
       </div>
     </section>
     
-    <section>
+    <section class="set-service">
       <h3>ドリンクセットサービス</h3>
-      <ul>
+      <ul class="set-service-explain">
         <li>ランチ価格に＋200円でお好きなドリンク1つ</li>
         <li>スイーツ価格に＋300円でお好きなドリンク1つ</li>
       </ul>
-    </section>
-    
+    </section> 
   </main>
 
   
