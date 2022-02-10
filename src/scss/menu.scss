@@ -1,11 +1,13 @@
+@import "variable.scss";
+
+
 main {
   position: absolute;
   width: 100%;
   top: 840px;
   background-image: url(../../img/background.jpeg);
   background-position: contain;
-  background-repeat: round;
-  
+  background-repeat: round;  
 }
 
 h1 {
@@ -20,7 +22,7 @@ h3 {
 }
 
 .detail {
-  background: rgba(255, 255, 255, 60%);
+  background: $translucent-white;
 }
 
 .price {
@@ -34,25 +36,21 @@ h3 {
   height: 570px;
   display: flex;
   margin-bottom: 100px;
-
   &-image {
     width: 60%;
     height: 570px;
     background-position: center;
     background-size: cover;
   }
-
   &-detail {
     width: 40%;
     padding: 80px 60px;
   }
-
   &-contents {
     font-size: 18px;
     margin-bottom: 100px;
   }
 }
-
 
 .lunch-container-1 {
   flex-direction: row-reverse;
@@ -80,7 +78,6 @@ h3 {
 }
 
 .sweet-container {
-  background: white;
   height: 850px;
   display: flex;
   .price {
@@ -120,7 +117,7 @@ h3 {
 }
 
 .drink-menu-list {
-  background: rgba(255, 255, 255, 60%);
+  background: $translucent-white;
   padding: 30px;
   width: 80%;
   margin: 0 auto;
@@ -162,7 +159,7 @@ h3 {
 
 .set-service {
   width: 80%;
-  margin: 30px auto 0;
+  margin: 30px auto ;
   h3 {
     font-size: 25px;
     margin-bottom: 0;
