@@ -1,6 +1,5 @@
 @import "variable.scss";
 @import "base.scss";
-@import "font-style.scss";
 @import "header.scss";
 @import "footer.scss";
 
@@ -16,16 +15,15 @@ main {
 }
 
 h1 {
-  font-size: $x-large-font-size;
+  font-size: $font-size-xxl;
   text-align: center;
   margin: 50px 0 30px;
 }
 
 h3 {
-  font-size: $large-font-size;
+  font-size: $font-size-l;
   margin-bottom: 60px;
   font-weight: normal;
-
 }
 
 .detail {
@@ -33,9 +31,9 @@ h3 {
 }
 
 .price {
-  font-size: 30px;
+  font-size: $font-size-l;
   span {
-    font-size: 15px;
+    font-size: $font-size-s;
   }
 }
 
@@ -49,31 +47,22 @@ h3 {
     background-position: center;
     background-size: cover;
   }
+  .image1 {
+    background-image: $lunch-bkg-img1; 
+  }
+  .image2 {
+    background-image: $lunch-bkg-img2;  
+  }
+  .image3 {
+    background-image: $lunch-bkg-img3;  
+  }
   &-detail {
     width: 40%;
     padding: 80px 60px;
   }
   &-contents {
-    font-size: 18px;
+    font-size: $font-size-m;
     margin-bottom: 100px;
-  }
-}
-
-.lunch-container-1 {
-  &-image {
-    background-image: url(../../img/menu-image1.jpeg);  
-  }
-}
-
-.lunch-container-2 {
-  &-image {
-    background-image: url(../../img/menu-image2.png);  
-  }
-}
-
-.lunch-container-3 {
-  &-image {
-    background-image: url(../../img/menu-image3.jpeg);  
   }
 }
 
@@ -136,19 +125,19 @@ h3 {
   margin: 40px 0;
   display: flex;
   &-name {
-    font-size: 20px;
+    font-size: $font-size-m;
     width: 50%;
     span {
-      font-size: $small-font-size;
+      font-size: $font-size-s;
     }
   }
   &-price {
     width: 20%;
-    font-size: 20px;
+    font-size: $font-size-m;
     text-align: right;
     margin-left: auto;
     span {
-      font-size: $small-font-size;
+      font-size: $font-size-s;
     }
   }
 }
@@ -172,7 +161,7 @@ h3 {
     margin-top: 20px;
     margin-left: 30px;
     list-style: disc;
-    font-size: $middle-font-size;
+    font-size: $font-size-m;
   }
 }
 

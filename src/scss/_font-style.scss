@@ -1,19 +1,5 @@
-// h1タグ用のフォントサイズ
-$x-large-font-size: 4rem; 
-
-// h3タグ用のフォントサイズ
-$large-font-size: 3rem;
-
-$middle-font-size: 1.8rem;
-
-$small-font-size:1.5rem;
-
-// コピーライト用のフォントサイズ
-$x-small-font-size: 1.2rem;
-
-
 .heading {
-  font-size: 3rem;
+  font-size: $font-size-l;
   letter-spacing: 3px;
   font-weight: normal;
   text-align: center;
