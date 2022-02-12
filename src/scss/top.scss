@@ -4,6 +4,10 @@
 @import "layout-image.scss";
 @import "variable.scss";
 
+main {
+  height: 3300px;
+}
+
 .link-container {
   width: 46%;
   height: 220px;
@@ -69,7 +73,7 @@
   width: 100%;
   height: 230px;
   text-align: center;
-  font-size: 5rem;
+  font-size: $x-large-font-size;
   padding: 60px 20px;
 }
 
