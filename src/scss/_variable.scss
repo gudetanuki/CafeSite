@@ -14,6 +14,9 @@ $font-size-xl: 3.5rem;
 // h3タグ用のフォントサイズ
 $font-size-l: 3rem;
 
+// 画面上のデフォルトのフォントサイズ
+$font-size-basic: 1.6rem;
+
 $font-size-m: 1.8rem;
 
 // spanタグ用のフォントサイズ
@@ -27,3 +30,7 @@ $font-size-xs: 1.2rem;
 $lunch-bkg-img1: url(../../img/menu-image1.jpeg);
 $lunch-bkg-img2: url(../../img/menu-image2.png);
 $lunch-bkg-img3: url(../../img/menu-image3.jpeg);
+
+// menuページのsweet-container-contents-image1,2の背景画像パス
+$sweet-bkg-image1: url(../../img/sweets-image1.jpeg);
+$sweet-bkg-image2: url(../../img/sweet-image2.jpeg);
