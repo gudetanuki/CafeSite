@@ -1,0 +1,28 @@
+.footer {
+  height: 250px;
+  padding: 50px 60px;
+  background: rgb(216, 237,152);
+  position: relative;
+  top: 4020px;
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  &-logo {
+    width: 20%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  &-copy {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px; 
+  }
+
+}
+
+
+

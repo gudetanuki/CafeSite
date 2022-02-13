@@ -1,0 +1,24 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.lunch-image1 {
+  background-image: $lunch-bkg-img1; 
+}
+.lunch-image2 {
+  background-image: $lunch-bkg-img2; 
+}
+.lunch-image3 {
+  background-image: $lunch-bkg-img3; 
+}
+
+.sweets-image1 {
+  background-image: $sweets-bkg-img1;
+}
+.sweets-image2 {
+  background-image: $sweets-bkg-img2;
+}

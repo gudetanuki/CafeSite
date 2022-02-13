@@ -10,9 +10,8 @@ html {
 
 main {
   width: 100%;
-  height: 3300px;
-  font-size: 1.6rem;
-  background-image: url(../../img/background.jpeg);
+  font-size: $font-size-base;
+  background-image: $main-bkg-img;
   background-position: contain;
   background-repeat: round;
 }

@@ -1,0 +1,139 @@
+@import "variable.scss";
+@import "base.scss";
+@import "utility.scss";
+@import "header.scss";
+@import "footer.scss";
+
+main {
+  height: 4100px;
+  position: absolute;
+  width: 100%;
+  top: 840px;
+}
+
+h1 {
+  font-size: $font-size-xxl;
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+h2 {
+  font-size: $font-size-xl;
+  margin-bottom: 60px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: $font-size-l;
+  font-weight: normal;
+  margin-bottom: 0;
+  display: inline-block;
+  border-bottom: 1px solid #333;
+}
+
+.detail {
+  background: $translucent-white;
+}
+
+.brackets {
+  font-size: $font-size-s;
+}
+
+.price {
+  font-size: $font-size-l;
+}
+
+.lunch {
+  &-item {
+    height: 570px;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  &-image {
+    width: 60%;
+    height: 570px;
+    background-position: center;
+    background-size: cover;
+  }
+  &-detail {
+    width: 40%;
+    padding: 80px 60px;
+  }
+  &-contents {
+    font-size: $font-size-m;
+    margin-bottom: 100px;
+  }
+}
+
+.sweets {
+  &-item {
+    height: 850px;
+    display: flex;
+    position: relative;
+    width: 50%;
+  }
+  &-image {
+    width: 100%;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+  }
+  &-detail {
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: 610px;
+    padding: 60px 60px;
+  }
+  .price {
+    text-align: right;
+    margin-right: 30px;
+  }
+}
+
+.drink {
+  &-list {
+    background: $translucent-white;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+  &-item {
+    width: 45%;
+    margin: 40px 0;
+    display: flex;
+  }
+  &-name {
+    font-size: $font-size-m;
+    width: 50%;
+  }
+  &-dots {
+    width: 30%;
+    padding-top: 5px;
+    margin: 0 auto;
+    text-align: right;
+  }
+  &-price {
+    width: 20%;
+    font-size: $font-size-m;
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+.set-service {
+  width: 80%;
+  margin: 30px auto ;
+  &-explain {
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style: disc;
+    font-size: $font-size-m;
+  }
+}
+
+
+
