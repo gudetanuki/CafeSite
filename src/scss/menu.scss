@@ -1,11 +1,8 @@
 @import "variable.scss";
 @import "base.scss";
+@import "utility.scss";
 @import "header.scss";
 @import "footer.scss";
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
 
 main {
   height: 4100px;
@@ -46,24 +43,17 @@ h3 {
   font-size: $font-size-l;
 }
 
-.lunch-container {
-  height: 570px;
-  display: flex;
-  margin-bottom: 100px;
+.lunch {
+  &-item {
+    height: 570px;
+    display: flex;
+    margin-bottom: 100px;
+  }
   &-image {
     width: 60%;
     height: 570px;
     background-position: center;
     background-size: cover;
-  }
-  .image1 {
-    background-image: $lunch-bkg-img1; 
-  }
-  .image2 {
-    background-image: $lunch-bkg-img2;  
-  }
-  .image3 {
-    background-image: $lunch-bkg-img3;  
   }
   &-detail {
     width: 40%;
@@ -75,47 +65,47 @@ h3 {
   }
 }
 
-.sweets-container {
-  height: 850px;
-  display: flex;
-  .image1 {
-    background-image: $sweets-bkg-img1;
+.sweets {
+  &-item {
+    height: 850px;
+    display: flex;
+    position: relative;
+    width: 50%;
   }
-  .image2 {
-    background-image: $sweets-bkg-img2;
-    background-position:bottom;
+  &-image {
+    width: 100%;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+  }
+  &-detail {
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: 610px;
+    padding: 60px 60px;
   }
   .price {
     text-align: right;
     margin-right: 30px;
   }
-  &-contents {
-    position: relative;
-    width: 50%;
-    &-image {
-      width: 100%;
-      height: 850px;
-      background-position: center;
-      background-size: cover;
-    }
-    &-detail {
-      width: 100%;
-      height: 240px;
-      position: absolute;
-      top: 610px;
-      padding: 60px 60px;
-    }
-  }
 }
 
-.drink-container {
-  background: $translucent-white;
-  padding: 30px;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
+.drink {
+  &-list {
+    background: $translucent-white;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+  &-item {
+    width: 45%;
+    margin: 40px 0;
+    display: flex;
+  }
   &-name {
     font-size: $font-size-m;
     width: 50%;
@@ -132,12 +122,6 @@ h3 {
     text-align: right;
     margin-left: auto;
   }
-}
-
-.drink-item {
-  width: 45%;
-  margin: 40px 0;
-  display: flex;
 }
 
 .set-service {
