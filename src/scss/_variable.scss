@@ -15,7 +15,7 @@ $font-size-xl: 3.5rem;
 $font-size-l: 3rem;
 
 // 画面上のデフォルトのフォントサイズ
-$font-size-basic: 1.6rem;
+$font-size-base: 1.6rem;
 
 $font-size-m: 1.8rem;
 
@@ -26,11 +26,14 @@ $font-size-s:1.5rem;
 $font-size-xs: 1.2rem;
 
 
+// 全ページ共通のmainタグ部分の背景画像パスの変数
+$main-bkg-img: url(../../img/background.jpeg);
+
 // menuページのlunch-container-image1,2,3の背景画像パスの変数
 $lunch-bkg-img1: url(../../img/menu-image1.jpeg);
 $lunch-bkg-img2: url(../../img/menu-image2.png);
 $lunch-bkg-img3: url(../../img/menu-image3.jpeg);
 
 // menuページのsweet-container-contents-image1,2の背景画像パス
-$sweet-bkg-image1: url(../../img/sweets-image1.jpeg);
-$sweet-bkg-image2: url(../../img/sweet-image2.jpeg);
+$sweets-bkg-img1: url(../../img/sweets-image1.jpeg);
+$sweets-bkg-img2: url(../../img/sweet-image2.jpeg);

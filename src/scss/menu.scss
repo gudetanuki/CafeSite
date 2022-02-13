@@ -38,7 +38,7 @@ h3 {
   background: $translucent-white;
 }
 
-.span {
+.brackets {
   font-size: $font-size-s;
 }
 
@@ -75,19 +75,14 @@ h3 {
   }
 }
 
-.sweets-container-contents-detail {
-  width: 100%;
-  padding: 60px 60px;
-}
-
 .sweets-container {
   height: 850px;
   display: flex;
   .image1 {
-    background-image: $sweet-bkg-image1;
+    background-image: $sweets-bkg-img1;
   }
   .image2 {
-    background-image: $sweet-bkg-image2;
+    background-image: $sweets-bkg-img2;
     background-position:bottom;
   }
   .price {
@@ -108,11 +103,12 @@ h3 {
       height: 240px;
       position: absolute;
       top: 610px;
+      padding: 60px 60px;
     }
   }
 }
 
-.drink-menu-list {
+.drink-container {
   background: $translucent-white;
   padding: 30px;
   width: 80%;
@@ -120,12 +116,6 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
-}
-
-.drink-container {
-  width: 45%;
-  margin: 40px 0;
-  display: flex;
   &-name {
     font-size: $font-size-m;
     width: 50%;
@@ -142,6 +132,12 @@ h3 {
     text-align: right;
     margin-left: auto;
   }
+}
+
+.drink-item {
+  width: 45%;
+  margin: 40px 0;
+  display: flex;
 }
 
 .set-service {
