@@ -5,30 +5,30 @@
 @import "footer.scss";
 
 main {
+  width: 100%;
   height: 4100px;
   position: absolute;
-  width: 100%;
   top: 840px;
 }
 
 h1 {
+  margin: 50px 0 30px;
   font-size: $font-size-xxl;
   text-align: center;
-  margin: 50px 0 30px;
 }
 
 h2 {
-  font-size: $font-size-xl;
   margin-bottom: 60px;
+  font-size: $font-size-xl;
   font-weight: normal;
 }
 
 h3 {
-  font-size: $font-size-l;
-  font-weight: normal;
+  border-bottom: 1px solid #333;
   margin-bottom: 0;
   display: inline-block;
-  border-bottom: 1px solid #333;
+  font-size: $font-size-l;
+  font-weight: normal;
 }
 
 .detail {
@@ -46,8 +46,8 @@ h3 {
 .lunch {
   &-item {
     height: 570px;
-    display: flex;
     margin-bottom: 100px;
+    display: flex;
   }
   &-image {
     width: 60%;
@@ -60,17 +60,17 @@ h3 {
     padding: 80px 60px;
   }
   &-contents {
-    font-size: $font-size-m;
     margin-bottom: 100px;
+    font-size: $font-size-m;
   }
 }
 
 .sweets {
   &-item {
+    width: 50%;
     height: 850px;
     display: flex;
     position: relative;
-    width: 50%;
   }
   &-image {
     width: 100%;
@@ -81,22 +81,22 @@ h3 {
   &-detail {
     width: 100%;
     height: 240px;
+    padding: 60px 60px;
     position: absolute;
     top: 610px;
-    padding: 60px 60px;
   }
   .price {
-    text-align: right;
     margin-right: 30px;
+    text-align: right;
   }
 }
 
 .drink {
   &-list {
-    background: $translucent-white;
-    padding: 30px;
     width: 80%;
+    padding: 30px;
     margin: 0 auto;
+    background: $translucent-white;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -107,8 +107,8 @@ h3 {
     display: flex;
   }
   &-name {
-    font-size: $font-size-m;
     width: 50%;
+    font-size: $font-size-m;
   }
   &-dots {
     width: 30%;
@@ -118,15 +118,15 @@ h3 {
   }
   &-price {
     width: 20%;
+    margin-left: auto;
     font-size: $font-size-m;
     text-align: right;
-    margin-left: auto;
   }
 }
 
 .set-service {
   width: 80%;
-  margin: 30px auto ;
+  margin: 30px auto;
   &-explain {
     margin-top: 20px;
     margin-left: 30px;
