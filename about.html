@@ -2,21 +2,20 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title></title>
-    <!-- TODO linkは後で実装 -->
-
-
+  <title>花ゆら</title>
+  <link rel="stylesheet" href="dict/css/about.css">
 </head>
 <body>
-  <header id="header">
+  <header class="header">
     <div class="top-decoration">
+      <img class="top-deco-bgd" src="img/22953078_m.png" alt="">
     </div>
     <div class="logo-slide">
-      <p></p>
-      <img class="logo" src="" alt="">
+      <p>こだわりのカラダに優しい<br>カフェ＆ダイニング</p>
+      <img class="logo" src="img/logo.png2.png" alt="">
     </div>
-    <nav id="header-menu">
-      <ul>
+    <nav class="header-menu">
+      <ul class="header-menu-flex">
         <li><a href="#">メニュー一覧</a></li>
         <li><a href="#">当店のこだわり</a></li>
         <li><a href="#">お問い合わせ</a></li>
@@ -25,33 +24,35 @@
   </header>
 
   <main>
-    <section class="">
-      <div class="front-image"></div>
-      <div class="back-image"></div> 
-      <div class="text-box">
-        <h1>皆様の健康と幸せを、食から。</h1>
-        <p>当店の願いは、食を通して<br>
-          皆様の健康を支える場所となること。<br>
-          いつでも変わらぬ「おいしい」を届けます。
-        </p>
+    <section class="about-company">
+      <div class="company-container">
+        <div class="front-image company-front"></div>
+        <div class="back-image company-back"></div> 
+        <div class="company-text-box">
+          <h1>皆様の健康と幸せを、食から。</h1>
+          <p>当店の願いは、食を通して<br>
+            皆様の健康を支える場所となること。<br>
+            いつでも変わらぬ「おいしい」を届けます。
+          </p>
+        </div>
       </div>
-
-      <div class="points">
-        <div class="point1">
+   
+      <div class="points-container">
+        <div class="point point-first">
           <h2>真に安全な食材</h2>
           <p>口に入れるものだから、<br>
             食材は全て国産・減農薬にこだわり、<br>
             まっさらな自然の恵みを届けます。
           </p>
         </div>
-        <div class="point2">
+        <div class="point point-second">
           <h2>毎日続くおいしさ</h2>
           <p>健康は毎日の継続から。<br>
             毎日訪れたくなるような<br>
             お店づくりに取り組みます。  
           </p>
         </div> 
-        <div class="point3">
+        <div class="point point-third">
           <h2>持続可能社会への貢献</h2>
           <p>人だけでなく、社会も健康に。<br>
             当店を支える第一次産業の発展と<br>
@@ -61,15 +62,19 @@
       </div>
     </section>
 
-    <section class="">
-      <div class="front-image"></div>
-      <div class="back-image"></div> 
-      <div class="text-box">
-        <h1>支え合い、一緒に育む</h1>
-        <p>定番から旬の野菜・果物まで、<br>
-          個性豊かな全国の産地から食材が届きます。<br>
-          当店を支える農家の方をご紹介します。
-        </p>
+    <section class="about-origin">
+      <!-- originはクラス名変える -->
+      <div class="origin-container">
+        <div class="front-image origin-front"></div>
+        <div class="back-image origin-front"></div> 
+        <div class="origin-text-box">
+          <h1>支え合い、一緒に育む</h1>
+          <p>定番から旬の野菜・果物まで、<br>
+            個性豊かな全国の産地から食材が届きます。<br>
+            当店を支える農家の方をご紹介します。
+          </p>
+        </div>
+
       </div>
 
       <div class="interview">
@@ -104,9 +109,7 @@
     </section>
   </main>
 
-  
-
-  <footer>
+  <footer class="footer">
     <div class="footer-menu">
       <nav>
         <ul>
@@ -115,9 +118,9 @@
           <li><a href="#">お問い合わせ</a></li>
         </ul>
       </nav>
-
+      <img class="footer-logo" src="img/logo.png2.png" alt="">
     </div>
-    <p>copylight</p>
+    <p class="footer-copy">2022©️hanayura</p>
   </footer> 
 </body>
 </html>
