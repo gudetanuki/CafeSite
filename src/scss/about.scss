@@ -11,5 +11,128 @@ main {
 
 section {
   background: silver;
+  // height: 500px;
 }
+
+.text-container {
+  width: 46%;
+  height: 220px;
+  background: $translucent-white;
+  z-index: 2;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-size: $font-size-xxl;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: $font-size-xl;
+  font-weight: normal;
+}
+
+h3 {
+  font-size:$font-size-l;
+  font-weight: normal;
+}
+
+.company {
+  &-container {
+    background: yellow;
+  }
+  &-front {
+    background-image: url(../../img/menu-image1.jpeg);
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  &-back {
+    background-color: $image-back-pink;
+    position: relative;
+    top: -700px;
+    left: 0; 
+  }
+  &-text-box {
+    position: relative;
+    top: -930px;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+.points {
+  &-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -810px;
+  }
+}
+
+.point {
+  width: 35%;
+  height: 500px;
+  padding: 50px 20px;
+  border: 1px solid #333;
+  text-align: center;
+  background: #fff;
+
+}
+
+
+
+.food {
+  &-container {
+    background: yellow;
+    position: relative;
+    top: 1000px;
+  }
+  &-front {
+    background-image: $food-front-bkg;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  &-back {
+    background-color: $image-back-green;
+    position: relative;
+    top: 50px;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  &-text-box {
+    position: absolute;
+    top: 500px;
+    left: 0; 
+  }
+}
+
+
+.people {
+  &-introduce {
+    background: pink;
+    position: relative;
+    top: 1200px;
+  }
+  &-photo {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background: $people-bkg-img1;
+
+  }
+
+  .message {
+    background: white;
+  }
+}
+
+
+
+
+
 
