@@ -113,6 +113,7 @@ h3 {
 
 .people {
   &-introduce {
+    padding: 50px 20px;
     background: pink;
     position: relative;
     top: 1200px;
@@ -126,8 +127,28 @@ h3 {
 
   }
 
-  .message {
-    background: white;
+ 
+}
+.message {
+  width: 50%;
+  background: white;
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 10px;
+  background: #FFF;
+  border: solid 1px #FFF;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-right: 12px solid #FFF;
+    z-index: 2;
   }
 }
 
