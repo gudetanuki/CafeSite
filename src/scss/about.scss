@@ -11,7 +11,6 @@ main {
 
 section {
   background: silver;
-  // height: 500px;
 }
 
 .text-container {
@@ -78,9 +77,7 @@ h3 {
   border: 1px solid #333;
   text-align: center;
   background: #fff;
-
 }
-
 
 
 .food {
@@ -113,31 +110,53 @@ h3 {
 
 .people {
   &-introduce {
-    padding: 50px 20px;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto 30px;
     background: pink;
     position: relative;
     top: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &-profile {
+    background: yellow;
   }
   &-photo {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: 1px solid #333;
     border-radius: 50%;
-    background: $people-bkg-img1;
-
+    background-size: cover;
   }
-
- 
+  &-name {
+    width: 70%;
+    padding: 0 50px;
+    margin: 20px auto 0;
+    background: white;
+  }
 }
+
+.woman {
+  background: $people-bkg-img1;
+  background-position: 30% 10%;
+}
+
+.man {
+  background: $people-bkg-img2;
+  background-position: 50% 10%;
+  background-size: 600px;
+  background-repeat: no-repeat;
+}
+
 .message {
   width: 50%;
+  padding: 10px;
+  border: solid 1px #FFF;
+  margin: 1.5em 0 1.5em 15px;
   background: white;
   position: relative;
   display: inline-block;
-  margin: 1.5em 0 1.5em 15px;
-  padding: 10px;
-  background: #FFF;
-  border: solid 1px #FFF;
   box-sizing: border-box;
 
   &::before {
@@ -145,10 +164,14 @@ h3 {
     position: absolute;
     top: 50%;
     left: -24px;
-    margin-top: -12px;
     border: 12px solid transparent;
     border-right: 12px solid #FFF;
+    margin-top: -12px;
     z-index: 2;
+  }
+
+  p {
+    font-size: $font-size-m;
   }
 }
 
