@@ -1,6 +1,7 @@
 @import "variable.scss";
 @import "base.scss";
 @import "layout-image.scss";
+@import "mixin.scss";
 @import "utility.scss";
 @import "header.scss";
 @import "footer.scss";
@@ -10,17 +11,12 @@ main {
   padding: 50px 0;
 }
 
-
 h1 {
-  font-size: $font-size-xxl;
-  font-weight: normal;
-  margin-bottom: 30px;
+  @include about-h1-style;
 }
 
 h2 {
-  font-size: $font-size-xl;
-  font-weight: normal;
-  margin-bottom: 30px;
+  @include about-h2-style;
 }
 
 .company {
@@ -29,21 +25,14 @@ h2 {
   }
   &-front {
     background-image: url(../../img/menu-image1.jpeg);
-    position: relative;
-    top: 0;
-    left: 0;
+    @include company-front-position;
   }
   &-back {
     background-color: $image-back-pink;
-    position: relative;
-    top: -700px;
-    left: 0; 
+    @include company-back-position;
   }
   &-text-box {
-    position: relative;
-    top: -930px;
-    left: 100%;
-    transform: translateX(-100%);
+    @include company-text-box-position;
   }
 }
 
@@ -71,6 +60,9 @@ h2 {
     font-size: $font-size-m;
     text-align: center;
     background: #fff;
+    p {
+      margin: 60px 0;
+    }
   }
 }
 
@@ -81,22 +73,14 @@ h2 {
   }
   &-front {
     background-image: $food-front-bkg;
-    position: absolute;
-    top: 0px;
-    left: 100%;
-    transform: translateX(-100%);
+    @include food-front-position;
   }
   &-back {
     background-color: $image-back-green;
-    position: relative;
-    top: 50px;
-    left: 100%;
-    transform: translateX(-100%);
+    @include food-back-position;
   }
   &-text-box {
-    position: absolute;
-    top: 500px;
-    left: 0; 
+    @include food-text-box-position;
   }
 }
 
@@ -137,12 +121,12 @@ h2 {
   }
 }
 
-.woman {
+.photo-first {
   background: $people-bkg-img1;
   background-position: 30% 10%;
 }
 
-.man {
+.photo-second {
   background: $people-bkg-img2;
   background-position: 50% 10%;
   background-size: 600px;
