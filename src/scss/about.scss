@@ -5,40 +5,27 @@
 @import "header.scss";
 @import "footer.scss";
 
+
 main {
-  background: pink;
+  padding: 50px 0;
 }
 
-section {
-  background: silver;
-}
-
-.text-container {
-  width: 46%;
-  height: 220px;
-  background: $translucent-white;
-  z-index: 2;
-  padding: 30px 20px;
-}
 
 h1 {
   font-size: $font-size-xxl;
   font-weight: normal;
+  margin-bottom: 30px;
 }
 
 h2 {
   font-size: $font-size-xl;
   font-weight: normal;
-}
-
-h3 {
-  font-size:$font-size-l;
-  font-weight: normal;
+  margin-bottom: 30px;
 }
 
 .company {
   &-container {
-    background: yellow;
+    height: 900px;
   }
   &-front {
     background-image: url(../../img/menu-image1.jpeg);
@@ -60,31 +47,37 @@ h3 {
   }
 }
 
+.text-container {
+  width: 46%;
+  height: 220px;
+  padding: 20px;
+  background: $translucent-white;
+  font-size: $font-size-m;
+  z-index: 2;
+}
+
 .points {
   &-container{
     width: 100%;
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: -810px;
+  }
+  &-contents {
+    width: 35%;
+    height: 500px;
+    padding: 50px 20px;
+    border: 1px solid #333;
+    font-size: $font-size-m;
+    text-align: center;
+    background: #fff;
   }
 }
 
-.point {
-  width: 35%;
-  height: 500px;
-  padding: 50px 20px;
-  border: 1px solid #333;
-  text-align: center;
-  background: #fff;
-}
-
-
 .food {
   &-container {
-    background: yellow;
+    height: 900px;
     position: relative;
-    top: 1000px;
   }
   &-front {
     background-image: $food-front-bkg;
@@ -107,20 +100,13 @@ h3 {
   }
 }
 
-
 .people {
   &-introduce {
     width: 80%;
     padding: 20px;
-    margin: 0 auto 30px;
-    background: pink;
-    position: relative;
-    top: 1200px;
+    margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
-  }
-  &-profile {
-    background: yellow;
   }
   &-photo {
     width: 300px;
@@ -129,11 +115,25 @@ h3 {
     border-radius: 50%;
     background-size: cover;
   }
-  &-name {
-    width: 70%;
-    padding: 0 50px;
-    margin: 20px auto 0;
+  &-message {
+    width: 50%;
+    padding: 30px 10px;
+    border: solid 1px #555;
     background: white;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      border: 12px solid transparent;
+      z-index: 2;
+    }
+    &-name {
+      font-size: $font-size-m;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -149,32 +149,28 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.message {
-  width: 50%;
-  padding: 10px;
-  border: solid 1px #FFF;
+.people-message-1 {
   margin: 1.5em 0 1.5em 15px;
-  background: white;
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-
   &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -24px;
-    border: 12px solid transparent;
-    border-right: 12px solid #FFF;
+    left: -25px;
+    border-right: 12px solid #555;
     margin-top: -12px;
-    z-index: 2;
-  }
-
-  p {
-    font-size: $font-size-m;
   }
 }
 
+.people-message-2 {
+  margin: 1.5em 15px 1.5em 0;
+  &::before {
+    left: 100%;
+    border-left: 15px solid #555;
+    margin-top: -15px;
+  }
+}
+
+.footer {
+  position: relative;
+  top: 0px;
+}
 
 
 
