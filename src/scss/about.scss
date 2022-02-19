@@ -12,11 +12,11 @@ main {
 }
 
 h1 {
-  @include about-h1-style;
+  @include head-style($font-size-xxl);
 }
 
 h2 {
-  @include about-h2-style;
+  @include head-style($font-size-xl);
 }
 
 .company {
@@ -24,15 +24,15 @@ h2 {
     height: 900px;
   }
   &-front {
+    @include position(0, 0, relative);
     background-image: url(../../img/menu-image1.jpeg);
-    @include position-r(0, 0);
   }
   &-back {
+    @include position(-700px, 0, relative);
     background-color: $image-back-pink;
-    @include position-r(-700px, 0);
   }
   &-text-box {
-    @include position-r(-930px, 100%);
+    @include position(-930px, 100%, relative);
     transform: translateX(-100%);
   }
 }
@@ -73,17 +73,17 @@ h2 {
     position: relative;
   }
   &-front {
-    background-image: $food-front-bkg;
-    @include position-a(0, 100%);
+    @include position(0, 100%, absolute);
     transform: translateX(-100%);
+    background-image: $food-front-bkg;
   }
   &-back {
-    background-color: $image-back-green;
-    @include position-a(50px, 100%);
+    @include position(50px, 100%, absolute);
     transform: translateX(-100%);
+    background-color: $image-back-green;
   }
   &-text-box {
-    @include position-a(500px, 0);
+    @include position(500px, 0, absolute);
   }
 }
 
@@ -124,33 +124,35 @@ h2 {
   }
 }
 
-.photo-first {
-  background: $people-bkg-img1;
-  background-position: 30% 10%;
-}
-
-.photo-second {
-  background: $people-bkg-img2;
-  background-position: 50% 10%;
-  background-size: 600px;
-  background-repeat: no-repeat;
-}
-
-.people-message-1 {
-  margin: 1.5em 0 1.5em 15px;
-  &::before {
-    left: -25px;
-    border-right: 12px solid #555;
-    margin-top: -12px;
+.photo {
+  &-first {
+    background: $people-bkg-img1;
+    background-position: 30% 10%;
+  }
+  &-second {
+    background: $people-bkg-img2;
+    background-position: 50% 10%;
+    background-size: 600px;
+    background-repeat: no-repeat;
   }
 }
 
-.people-message-2 {
-  margin: 1.5em 15px 1.5em 0;
-  &::before {
-    left: 100%;
-    border-left: 15px solid #555;
-    margin-top: -15px;
+.people {
+  &-message-1 {
+    margin: 1.5em 0 1.5em 15px;
+    &::before {
+      left: -25px;
+      border-right: 12px solid #555;
+      margin-top: -12px;
+    }
+  }
+  &-message-2 {
+    margin: 1.5em 15px 1.5em 0;
+    &::before {
+      left: 100%;
+      border-left: 15px solid #555;
+      margin-top: -15px;
+    }
   }
 }
 

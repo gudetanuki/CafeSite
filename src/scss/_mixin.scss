@@ -1,5 +1,5 @@
-@mixin about-h1-style {
-  font-size: $font-size-xxl;
+@mixin head-style($font-size) {
+  font-size: $font-size;
   font-weight: normal;
   margin-bottom: 30px;
 }
@@ -11,17 +11,12 @@
 }
 
 // aboutページの画像位置のmixinコード
-@mixin position-r($top, $left) {
-  position: relative;
+@mixin position($top, $left, $position) {
+  position: $position;
   top: $top;
   left: $left;
 }
 
-@mixin position-a($top, $left) {
-  position: absolute;
-  top: $top;
-  left: $left;
-}
 
 
 
