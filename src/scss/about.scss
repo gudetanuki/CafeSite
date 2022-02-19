@@ -24,15 +24,15 @@ h2 {
     height: 900px;
   }
   &-front {
-    @include position(0, 0, relative);
+    @include position(relative, 0, 0);
     background-image: url(../../img/menu-image1.jpeg);
   }
   &-back {
-    @include position(-700px, 0, relative);
+    @include position(relative, -700px, 0);
     background-color: $image-back-pink;
   }
   &-text-box {
-    @include position(-930px, 100%, relative);
+    @include position(relative, -930px, 100%);
     transform: translateX(-100%);
   }
 }
@@ -73,17 +73,17 @@ h2 {
     position: relative;
   }
   &-front {
-    @include position(0, 100%, absolute);
+    @include position(absolute, 0, 100%);
     transform: translateX(-100%);
     background-image: $food-front-bkg;
   }
   &-back {
-    @include position(50px, 100%, absolute);
+    @include position(absolute, 50px, 100%);
     transform: translateX(-100%);
     background-color: $image-back-green;
   }
   &-text-box {
-    @include position(500px, 0, absolute);
+    @include position(absolute, 500px, 0);
   }
 }
 

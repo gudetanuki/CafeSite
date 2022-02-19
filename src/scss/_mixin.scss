@@ -4,14 +4,9 @@
   margin-bottom: 30px;
 }
 
-@mixin about-h2-style {
-  font-size: $font-size-xl;
-  font-weight: normal;
-  margin-bottom: 30px;
-}
 
 // aboutページの画像位置のmixinコード
-@mixin position($top, $left, $position) {
+@mixin position($position, $top, $left) {
   position: $position;
   top: $top;
   left: $left;
