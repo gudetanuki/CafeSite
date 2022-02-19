@@ -25,14 +25,15 @@ h2 {
   }
   &-front {
     background-image: url(../../img/menu-image1.jpeg);
-    @include company-front-position;
+    @include position-r(0, 0);
   }
   &-back {
     background-color: $image-back-pink;
-    @include company-back-position;
+    @include position-r(-700px, 0);
   }
   &-text-box {
-    @include company-text-box-position;
+    @include position-r(-930px, 100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -73,14 +74,16 @@ h2 {
   }
   &-front {
     background-image: $food-front-bkg;
-    @include food-front-position;
+    @include position-a(0, 100%);
+    transform: translateX(-100%);
   }
   &-back {
     background-color: $image-back-green;
-    @include food-back-position;
+    @include position-a(50px, 100%);
+    transform: translateX(-100%);
   }
   &-text-box {
-    @include food-text-box-position;
+    @include position-a(500px, 0);
   }
 }
 

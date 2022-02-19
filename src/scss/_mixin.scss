@@ -11,44 +11,20 @@
 }
 
 // aboutページの画像位置のmixinコード
-@mixin company-front-position {
+@mixin position-r($top, $left) {
   position: relative;
-  top: 0;
-  left: 0;
+  top: $top;
+  left: $left;
 }
 
-@mixin company-back-position {
-  position: relative;
-  top: -700px;
-  left: 0; 
-}
-
-@mixin company-text-box-position {
-  position: relative;
-  top: -930px;
-  left: 100%;
-  transform: translateX(-100%);
-}
-
-@mixin food-front-position {
+@mixin position-a($top, $left) {
   position: absolute;
-  top: 0px;
-  left: 100%;
-  transform: translateX(-100%);
+  top: $top;
+  left: $left;
 }
 
-@mixin food-back-position {
-  position: relative;
-  top: 50px;
-  left: 100%;
-  transform: translateX(-100%);
-}
 
-@mixin food-text-box-position {
-  position: absolute;
-  top: 500px;
-  left: 0; 
-}
+
 
 
 
