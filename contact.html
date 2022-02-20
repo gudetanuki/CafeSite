@@ -28,54 +28,57 @@
     <section class="question-container">
       <h1>よくあるお問い合わせ</h1>
       <ul class="question-list">
-        <li class="question-common question-list-q">
-          定休日はいつですか？
-          <span class="material-icons-outlined">expand_more</span>
+        <li class="question-common">
+          <div class="question-list-q">定休日はいつですか？
+            <span class="material-icons-outlined">expand_more</span>
+          </div>
+          <div class="question-list-a">毎週水曜日、12/31、1/1~1/3です。</div>
         </li>
-        <li class="question-common question-list-a">毎週水曜日、12/31、1/1~1/3です。</li>
-        <li class="question-common question-list-q">
-          予約はできますか？
-          <span class="material-icons-outlined">expand_more</span>
+        <li class="question-common">
+          <div class="question-list-q">予約はできますか？
+            <span class="material-icons-outlined">expand_more</span>
+          </div>
+          <div class="question-list-a">できます。お電話にて予約日前日までにお願いいたします。</div>
         </li>
-        <li class="question-common question-list-a">できます。お電話にて予約日前日までにお願いいたします。</li>
-        <li class="question-common question-list-q">
-          食物アレルギーがある場合、対応してくれますか？
-          <span class="material-icons-outlined">expand_more</span>
+        <li class="question-common">
+          <div class="question-list-q">食物アレルギーがある場合、対応してくれますか？
+            <span class="material-icons-outlined">expand_more</span>
+          </div>
+          <div class="question-list-a">できます。ご注文の際お申し付けください。</div>
         </li>
-        <li class="question-common question-list-a">ご注文の際お申し付けください。</li>
       </ul>
     </section>
 
-    <section class="contactform-container">
+    <form class="contactform-container">
       <h1>お問い合わせフォーム</h1>
-      <div class="contactform-flex d-flex">
+      <div class="contactform-flex">
         <div class="contactform-flex-contents">
           <label for="name">Name</label>
-          <input type="text" minlength="40" id="name" name="name">
+          <input type="text" id="name" name="name" placeholder="山田 花子">
         </div>
         <div class="contactform-flex-contents">
           <label for="company">Company</label>
-          <input type="text" minlength="40" id="company" name="name">
+          <input type="text" id="company" name="company" placeholder="株式会社花ゆら">
         </div>
         <div class="contactform-flex-contents">
           <label for="tel">Tel</label>
-          <input type="text" minlength="40" id="tel" name="name">
+          <input type="text" id="tel" name="tel" placeholder="00-0000-0000">
         </div>
         <div class="contactform-flex-contents">
           <label for="e-mail">E-mail</label>
-          <input type="text" minlength="40" id="e-mail" name="name">
+          <input type="text" id="e-mail" name="email" placeholder="hanayura@email.com">
         </div>
       </div>
       <div class="contactform-column">
         <div class="contactform-column-contents">
           <label for="content">Message</label>
-          <textarea name="content" id="content" cols="30" rows="10"></textarea>
+          <textarea name="content" id="content" cols="30" rows="10" placeholder="質問の内容を記入してください。"></textarea>
         </div>
         <div class="contactform-column-contents">
           <button class="submit-btn" type="submit">送信</button>
         </div>
       </div>
-    </section>
+    </form>
   </main>
 
   <footer class="footer">
