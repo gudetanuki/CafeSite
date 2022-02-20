@@ -12,8 +12,8 @@ main {
   width: 100%;
   font-size: $font-size-base;
   background-image: $main-bkg-img;
-  background-position: contain;
-  background-repeat: round;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
