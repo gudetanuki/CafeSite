@@ -1,0 +1,103 @@
+@import "variable.scss";
+@import "base.scss";
+@import "layout-image.scss";
+@import "mixin.scss";
+@import "utility.scss";
+@import "header.scss";
+@import "footer.scss";
+
+main {
+  font-size: $font-size-m;
+}
+
+
+h1 {
+ text-align: center;
+ @include head-style($font-size-xxl)
+}
+
+.material-icons-outlined {
+  margin-left: 15px;
+  vertical-align: bottom;
+}
+
+input {
+  width: 80%;
+  border: 0;
+  display: inline-block;
+  background: none;
+}
+
+textarea {
+  @include border(2px);
+  width: 100%;
+  background: none;
+}
+
+.question {
+  &-container{
+    height: 700px;
+    padding: 50px;
+    background: $image-back-pink;
+  }
+  &-list {
+    width: 80%;
+    padding: 40px 30px;
+    margin: 0 auto;
+    &-q {
+      @include border-bottom(2px);
+    }
+  }
+  &-common {
+    padding: 20px 30px;
+  }
+}
+
+.contactform {
+  &-container {
+    height: 800px;
+    padding: 50px;
+  }
+  &-flex {
+    width: 80%;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-contents {
+      @include border-bottom(2px);
+      width: 47%;
+      height: 100px;
+      padding-top: 70px;
+      margin: 5px;
+    }
+  }
+  &-column {
+    width: 80%;
+    padding: 5px;
+    margin: 30px auto 0;
+  }
+}
+
+.submit-btn {
+  @include border(1px);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 10px 60px;
+  margin: 20px auto;
+  display: block;
+  color: white;
+  background: #333;
+  font-size: $font-size-m;
+  cursor: pointer;
+  transition: all .5s;
+  &:hover {
+    color: #333;
+    background: white;
+    transition: all .5s;
+  }
+}
+
+.footer {
+  @include position(relative, 0, 0);
+}

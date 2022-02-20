@@ -12,6 +12,15 @@
   left: $left;
 }
 
+@mixin border($value) {
+  border: $value solid #333;
+}
+
+@mixin border-bottom($value) {
+  border-bottom: $value solid #333;
+} 
+
+
 
 
 
