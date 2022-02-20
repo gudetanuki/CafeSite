@@ -1,0 +1,22 @@
+@mixin head-style($font-size) {
+  font-size: $font-size;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+
+// aboutページの画像位置のmixinコード
+@mixin position($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+
+
+
+
+
+
+
+
