@@ -1,11 +1,15 @@
+@import "variable.scss";
+@import "mixin.scss";
+@import "utility.scss";
+
+
 .footer {
-  height: 250px;
+  height: 300px;
   padding: 50px 60px;
-  background: rgb(216, 237,152);
-  position: relative;
-  top: 4020px;
+  background: $header-back;
+  @include position(relative, 4020px, 0);
   &-menu {
-    display: flex;
+    font-size: $font-size-m;
     justify-content: space-between;
     li {
       margin-bottom: 20px;
@@ -17,9 +21,9 @@
     margin-top: 20px;
   }
   &-copy {
-    font-size: 12px;
-    text-align: center;
     margin-top: 10px; 
+    font-size: $font-size-xs;
+    text-align: center;
   }
 
 }
