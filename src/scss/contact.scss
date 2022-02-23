@@ -28,24 +28,43 @@ h1 {
     padding: 50px;
     background: $image-back-pink;
   }
+
   &-list {
     width: 80%;
     padding: 40px 5px;
     margin: 0 auto;
     &-q {
       @include border-bottom(2px);
-      padding: 20px 30px;
+      padding: 40px 30px 20px;
+      cursor: pointer;
     }
     &-a {
       padding: 20px 30px;
+      display: none;
     }
+  }
+}
+
+.open {
+  display: block;
+  animation: .5s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
 
 .contactform {
   &-container {
     height: 800px;
-    padding: 50px;
+    padding: 40px;
   }
   &-flex {
     width: 80%;
