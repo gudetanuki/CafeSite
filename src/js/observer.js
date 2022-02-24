@@ -3,17 +3,12 @@
   const targets = document.querySelectorAll('.fadein');
 
   function callback(entries, obs) {
-    console.log(entries);
-
     entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        return;
-      }
+      if (!entry.isIntersecting) return;
       entry.target.classList.add('appear');
       obs.unobserve(entry.target);
     });
   }
-
 
   const options = {
     threshold: 0.3,
@@ -24,5 +19,4 @@
   targets.forEach(target => {
     observer.observe(target);
   });
-
 }

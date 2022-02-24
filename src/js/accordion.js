@@ -5,13 +5,7 @@
   
   question.forEach((ele, index) => {
     ele.addEventListener('click', () => {
-      if(answer[index].classList.contains('open') === true) {
-          answer[index].classList.remove('open');
-      }
-      else if (answer[index].classList.contains('open') === false) {
-        answer[index].classList.add('open');
-      }
+      answer[index].classList.toggle('open');
     });
   });
-
 }

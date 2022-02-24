@@ -10,6 +10,7 @@
   @include position(relative, 4020px, 0);
   &-menu {
     font-size: $font-size-m;
+    display: flex;
     justify-content: space-between;
     li {
       margin-bottom: 20px;
