@@ -1,0 +1,9 @@
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .5s, transform .5s;
+  &.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

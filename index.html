@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>花ゆら</title>
   <link rel="stylesheet" href="dict/css/top.css">
-  <link rel="stylesheet" href="dict/css/header.css">
 </head>
 <body>
   <header class="header">
@@ -17,15 +16,15 @@
     </div>
     <nav class="header-menu">
       <ul class="header-menu-flex">
-        <li><a href="#">メニュー一覧</a></li>
-        <li><a href="#">当店のこだわり</a></li>
-        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="menu.html">メニュー一覧</a></li>
+        <li><a href="about.html">当店のこだわり</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="concept">
+    <section class="concept fadein">
       <div class="front-image concept-front"></div>
       <div class="back-image concept-back"></div>
       <div class="link-container concept-link">
@@ -34,7 +33,7 @@
       </div>
     </section>
 
-    <section class="origin">
+    <section class="origin fadein">
       <div class="middle-image"></div>
       <div class="front-image origin-front"></div>
       <div class="back-image origin-back"></div>
@@ -45,11 +44,11 @@
     </section>
 
     <div class="parallax"></div>
-    <div class="menu-link">
+    <div class="menu-link fadein">
       <a href="menu.html">メニューを見る</a>
     </div>
 
-    <section class="access-container">
+    <section class="access-container fadein">
       <h1 class="heading">店舗情報</h1>
       <div class="access-container-flex">
         <div class="access-container-address">
@@ -66,18 +65,22 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="footer-menu">
       <nav>
         <ul>
-          <li><a href="#">メニュー一覧</a></li>
-          <li><a href="#">当店のこだわり</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="menu.html">メニュー一覧</a></li>
+          <li><a href="about.html">当店のこだわり</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="contact.html">TOP</a></li>
         </ul>
       </nav>
+      <img class="footer-logo" src="img/logo.png2.png" alt="">
     </div>
-    <p>copylight</p>
+    <p class="footer-copy">2022©️hanayura</p>
   </footer> 
+
+  <script src="src/js/observer.js"></script>
 </body>
 
 
