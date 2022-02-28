@@ -177,6 +177,7 @@ main {
 @media (max-width:599px) {
   main {
     height: 2000px;
+    @include position(relative, -31px, 0);
   }
   section {
     height: 500px;

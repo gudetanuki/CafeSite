@@ -276,6 +276,9 @@ h2 {
       background-size: 400px;
     }
   }
+  .footer {
+    // @include position(relative, -31px, 0);
+  } 
 }
 
 

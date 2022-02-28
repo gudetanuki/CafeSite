@@ -5,7 +5,7 @@
   
   question.forEach((ele, index) => {
     ele.addEventListener('click', () => {
-      answer[index].classList.toggle('open');
+      answer[index].classList.add('open');
     });
   });
 }
