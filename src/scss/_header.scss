@@ -97,41 +97,49 @@
     margin: 0 auto;
     text-align: center;
     width: 28px;
+    height: 28px;
     cursor: pointer;
     display: inline-block;
     box-sizing: border-box;
-  }
-  .line {
-    width: 28px;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    background: #444;
-    border-radius: 2px;
-    display: inline-block;
-    box-sizing: border-box;
-    transition: all .5s;
-    &-first {
+    span {
+      width: 28px;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      background: #333;
+      border-radius: 2px;
+      display: inline-block;
+      box-sizing: border-box;
+      transition: all .5s;
+      display: inline-block;
+    }
+    span:nth-child(1) {
       top: 20px;
-      &.open {
+    }
+    span:nth-child(2) {
+      top: 10px;
+    }
+    span:nth-child(3) {
+      top: 0;
+    }
+  }
+
+  .hamburger-icon {
+    &.open {
+      span:nth-child(1) {
         top: 10px;
         transform: rotate(45deg);
       }
-    }
-    &-second {
-      top: 10px;
-      &.open {
-        opacity: 0;
+      span:nth-child(2) {
+        opacity: 0; 
       }
-    }
-    &-third {
-      top: 0;
-      &.open {
+      span:nth-child(3) {
         top: 10px;
         transform: rotate(-45deg);
       }
     }
   }
+
   .overlay {
     position: fixed;
     top: 0;
