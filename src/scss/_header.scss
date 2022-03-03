@@ -41,12 +41,45 @@
     margin-top: 345px;
     background: $header-back;
 
-    .header-menu-flex {
+    &-flex {
       width: 90%;
       margin: 0 auto;
       display: flex;
       justify-content: space-around;
       font-size: $font-size-m;
+    }
+  }
+}
+
+
+@media(max-width:1024px) {
+  .header {
+    .logo-slide {
+      padding-top: 50px;
+      @include position(absolute, 90px, 0);
+    }
+    .header-menu {
+      margin-top: 315px;
+    }
+  }  
+}
+
+@media(max-width:599px) {
+  .header {
+    .logo-slide {
+      height: 400px;
+      @include position(absolute, 30px, 0);
+      p {
+        font-size: $font-size-base;
+      }
+    }
+    .header-menu {
+      height: 60px;
+      padding: 10px;
+      margin-top: 65px;
+      &-flex {
+        display: none;
+      }
     }
   }
 }

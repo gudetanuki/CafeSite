@@ -4,6 +4,7 @@
 @import "header.scss";
 @import "footer.scss";
 @import "observer.scss";
+@import "mixin.scss";
 
 
 main {
@@ -83,9 +84,8 @@ h3 {
   &-detail {
     width: 100%;
     height: 240px;
-    padding: 60px 60px;
-    position: absolute;
-    top: 610px;
+    padding: 60px;
+    @include position(absolute, 610px, 0);
   }
   .price {
     margin-right: 30px;
@@ -134,6 +134,109 @@ h3 {
     margin-left: 30px;
     list-style: disc;
     font-size: $font-size-m;
+  }
+}
+
+
+@media(max-width:1024px) {
+  main {
+    @include position(absolute, 800px, 0);
+  }
+  .sweets {
+    &-detail {
+      padding: 40px;
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .drink {
+    &-list {
+      width: 90%;
+    }
+  }
+}
+
+@media(max-width:599px) {
+  main {
+    @include position(absolute, 490px, 0);
+    height: 5000px;
+  }
+  h1 {
+    margin: 30px 0 20px;
+    font-size: $font-size-xl;
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: $font-size-l;
+  }
+  h3 {
+    font-size: $font-size-m;
+  }
+  .lunch {
+    &-item {
+      height: 800px;
+      margin-bottom: 50px;
+      flex-direction: column;
+    }
+    &-image {
+      width: 100%;
+      height: 400px;
+    }
+    &-detail {
+      width: 100%;
+      padding: 60px 40px;
+    }
+    &-contents {
+      margin-bottom: 50px;
+      font-size: $font-size-m;
+    }
+  }
+  .sweets {
+    &-container {
+      .d-flex {
+        display: block;
+      }
+    }
+    &-item {
+      width: 100%;
+      height: 600px;
+    }
+    &-image {
+      height: 600px;
+    }
+    &-detail {
+      height: 240px;
+      @include position(absolute, 360px, 0);
+    }
+  }
+  .drink {
+    &-list {
+      width: 100%;
+      padding: 20px 30px;
+      flex-direction: column;
+    }
+    &-item {
+      width: 100%;
+      margin: 20px 0;
+    }
+    &-name {
+      font-size: $font-size-base;
+    }
+    &-price {
+      font-size: $font-size-base;
+    }
+  }
+  .set-service {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 30px;
+    &-explain {
+      font-size: $font-size-base;
+    }
+  }
+  .footer {
+    @include position(relative, 4900px, 0);
   }
 }
 

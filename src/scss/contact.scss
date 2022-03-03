@@ -112,3 +112,50 @@ h1 {
 .footer {
   @include position(relative, 0, 0);
 }
+
+
+@media(max-width:599px) {
+  main {
+    font-size: $font-size-s;
+  }
+  h1 {
+    @include head-style($font-size-l);
+  }
+  label {
+    width: 20%;
+  }
+  input {
+    width: 60%;
+  }
+  ::placeholder {
+    font-size: $font-size-s;
+  }
+  .question {
+    &-container{
+      height: 400px;
+      padding: 30px;
+    }
+    &-list {
+      width: 100%;
+      padding: 20px 5px;
+      &-q {
+        padding: 30px 20px 10px;
+      }
+    }
+  }
+  .contactform {
+    &-container {
+      padding: 50px 20px;
+    }
+    &-flex {
+      width: 100%;
+      &-contents {
+        height: 80px;
+        padding-top: 50px;
+      }
+    }
+    &-column {
+      width: 100%;
+    }
+  }
+}

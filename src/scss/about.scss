@@ -163,6 +163,120 @@ h2 {
 }
 
 
+@media(max-width:1024px) {
+  h1 {
+    @include head-style($font-size-l);
+  }
+  h2 {
+    @include head-style($font-size-l);
+  }
+  .front-image {
+    height: 650px;      
+  }
+  .back-image {
+    height: 750px;
+  }
+  .company {
+    &-back {
+      @include position(relative, -600px, 0);
+    }
+  }
+  .points {
+    &-container {
+      margin-top: 0;
+    }
+    &-contents {
+      height: 400px;
+    }
+  }
+  .people {
+    &-introduce {
+      width: 90%;
+    }
+  }
+}
+
+@media(max-width:599px) {
+  h1 {
+    @include head-style($font-size-l);
+  }
+  h2 {
+    @include head-style($font-size-m);
+  }
+  .text-container {
+    width: 60%;
+    height: 220px;
+    padding: 20px;
+    font-size: $font-size-s;
+  }
+  .front-image {
+    height: 300px;      
+  }
+  .back-image {
+    height: 400px;
+  }
+  .company {
+    &-container {
+      height: 500px;
+    }
+    &-back {
+      @include position(relative, -250px, 0);
+    }
+    &-text-box {
+      @include position(relative, -450px, 100%);
+    }
+  }
+  .points {
+    &-container {
+      margin-bottom: 100px;
+    }
+    &-contents {
+      height: 300px;
+      padding: 30px 20px;
+      font-size: $font-size-s;
+      text-align: left;
+      p {
+        margin: 30px auto;
+      }
+    }
+  }
+  .food {
+    &-container {
+      height: 500px;
+    }
+    &-text-box {
+      @include position(absolute, 200px, 0);
+    }
+  }
+  .people {
+    &-introduce {
+      width: 100%;
+      flex-direction: column;
+    }
+    &-photo {
+      width: 200px;
+      height: 200px;
+    }
+    &-message {
+      width: 100%;
+      padding: 20px 10px;
+      margin: 10px auto 0;
+      font-size: $font-size-s;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .photo {
+    &-first {
+      background-position: 40% 10%;
+    }
+    &-second {
+      background-position: 40% 10%;
+      background-size: 400px;
+    }
+  }
+}
 
 
 
