@@ -44,6 +44,11 @@
 
 ## 環境構築の方法
   `npm init` 初期化<br>
+  この時package.jsonファイルが自動生成される
+
+  sassファイルを自動コンパイルさせる流れ<br>
+  1.元となるsassファイル（ディレクトリ）を作成
+  2.コンパイル先のファイル（ディレクトリ）も作成
   `npm install sass`<br>
   インストール実行時にpackage.lock.jsonファイルが自動生成されるので、package.jsonで下記を記入する
  ```
