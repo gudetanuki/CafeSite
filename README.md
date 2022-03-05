@@ -47,13 +47,14 @@
   この時package.jsonファイルが自動生成される
 
   sassファイルを自動コンパイルさせる流れ<br>
-  1.元となるsassファイル（ディレクトリ）を作成
-  2.コンパイル先のファイル（ディレクトリ）も作成
+  1.元となるsassファイル（ディレクトリ）を作成<br>
   `npm install sass`<br>
-  インストール実行時にpackage.lock.jsonファイルが自動生成されるので、package.jsonで下記を記入する
+  2.インストール実行時にpackage.lock.jsonファイルが自動生成されることを確認<br>
+  その後package.jsonで下記を記入する
  ```
   "scripts": {
     "sass": "sass src/scss/:dict/css/ --no-source-map --watch"
   }
   ```
-  `npm run sass` 自動コンパイル開始
+  3.`npm run sass` <br>
+  4.自動コンパイルさせるファイル（この場合はdict/css/)が自動生成されて自動コンパイル開始
