@@ -116,6 +116,7 @@ h1 {
 
 @media(max-width:599px) {
   main {
+    @include position(relative, -31px, 0);
     font-size: $font-size-s;
   }
   h1 {

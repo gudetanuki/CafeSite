@@ -7,7 +7,7 @@
   .top-decoration {
     height: 365px;
     position: relative;
-    z-index: 1;
+    z-index: 100;
     .top-deco-bgd {
       width: 100%;
     }
@@ -40,7 +40,6 @@
     padding: 50px;
     margin-top: 345px;
     background: $header-back;
-
     &-flex {
       width: 90%;
       margin: 0 auto;
@@ -50,7 +49,13 @@
     }
   }
 }
+.hamburger-icon {
+  display: none;
+}
 
+.overlay {
+  display: none;
+}
 
 @media(max-width:1024px) {
   .header {
@@ -80,6 +85,79 @@
       &-flex {
         display: none;
       }
+    }
+  }
+
+  // -----------------------------
+  // ハンバーガーメニュー
+  // -----------------------------
+  .hamburger-icon {
+    @include position(relative, -100px, 90%);
+    z-index: 100;
+    margin: 0 auto;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    &.open {
+      span:nth-child(1) {
+        top: 10px;
+        transform: rotate(45deg);
+      }
+      span:nth-child(2) {
+        opacity: 0; 
+      }
+      span:nth-child(3) {
+        top: 10px;
+        transform: rotate(-45deg);
+      }
+    }
+    span {
+      width: 28px;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      background: #333;
+      border-radius: 2px;
+      display: inline-block;
+      box-sizing: border-box;
+      transition: all .5s;
+      display: inline-block;
+    }
+    span:nth-child(1) {
+      top: 20px;
+    }
+    span:nth-child(2) {
+      top: 10px;
+    }
+    span:nth-child(3) {
+      top: 0;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 20;
+    text-align: center;
+    padding: 60px;
+    font-size: $font-size-m;
+    transition: opacity 1s;
+    li {
+      margin-top: 30px;
+    }
+    &.show {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
     }
   }
 }
